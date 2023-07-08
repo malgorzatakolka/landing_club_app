@@ -8,7 +8,7 @@ EXPOSE 8080
 
 
 #install all requirements in requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install pandas streamlit pycaret catboost lightgbm
 
 #Copy all files in current directory into app directory
 COPY . /app
